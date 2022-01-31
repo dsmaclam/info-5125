@@ -23,16 +23,17 @@ namespace _4_Prototype
             alice.Rank = "Employee";
 
             //(must be a User object)
-            User bob = (User)alice.Clone();
-            bob.FirstName = "Bob";
+            User bobb = (User)alice.Clone();
+            bobb.FirstName = "Bob";
+            bobb.Rank = "Customer";
 
             //'as' cast (can result in a null reference)
             //User sally = red.Clone() as User; // this is the wrong type of object
-            User sally = bob.Clone() as User;
+            User sally = bobb.Clone() as User;
             sally.FirstName = "Sally";
 
             alice.Print();
-            bob.Print();
+            bobb.Print();
             sally.Print();
         }
     }
