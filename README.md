@@ -8,5 +8,7 @@ This repository contains the in-class coding examples. This code may be sub-opti
 ### How Long Can I Access This Code?
 This repository will become private at the end of the semester. Please make sure you pull master after each lecture to have up to date examples.
 
+Note: During lectures code will be created on it's own branch and later merged into the master branch.
+
 ### Questions or Concerns?
 Please contact Daniel Maclam @ d_maclam@fanshawec.ca
