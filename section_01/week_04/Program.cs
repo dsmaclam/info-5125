@@ -17,13 +17,14 @@ namespace _4_Prototype
             alice.LastName = "Smith";
             alice.Rank = "Employee";
             
+            User bobby = (User)alice.Clone();
+            bobby.FirstName = "Bob";
+            bobby.LastName = "Smithe";
+            bobby.Rank = "Customer";
 
-            var b = (User)alice.Clone();
-            b.FirstName = "Bob";
-            b.Rank = "Customer";
-            
             alice.Print();
-            b.Print();
+            bobby.Print();
+
         }
     }
 }
