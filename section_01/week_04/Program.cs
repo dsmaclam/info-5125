@@ -17,11 +17,12 @@ namespace _4_Prototype
             alice.LastName = "Smith";
             alice.Rank = "Employee";
 
-            var bob = (User)alice.Clone();
-            bob.FirstName = "Bob";
+            var bobby = (User)alice.Clone();
+            bobby.FirstName = "Bob";
+            bobby.LastName = "Smithe";
 
             alice.Print();
-            bob.Print();
+            bobby.Print();
         }
     }
 }
