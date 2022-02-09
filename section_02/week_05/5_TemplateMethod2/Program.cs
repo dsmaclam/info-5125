@@ -12,10 +12,10 @@ namespace _5_TemplateMethod2
 
             var workers = new List<Worker>
             {
-                //new Firefighter(), 
-                //new Teacher(),
-                //new Police_Officer(),
-                //new SWATOfficer()
+                new Firefighter(), 
+                new Teacher(),
+                new PoliceOfficer(), 
+                new SWATOfficer()
             };
 
             foreach (var worker in workers)
