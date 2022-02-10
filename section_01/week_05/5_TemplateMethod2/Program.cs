@@ -12,11 +12,24 @@ namespace _5_TemplateMethod2
 
             var workers = new List<Worker>
             {
-                //new Firefighter(), 
-                //new Teacher(),
-                //new Police_Officer(),
-                //new SWATOfficer()
+                new FireFighter(), 
+                new Teacher(),
+                new PoliceOfficer(),
+                new SWATOfficer()
             };
+
+            /*
+             *  Create a concrete police officer class
+             *  have them eat a doughnut for breakfast
+             *  have them arrest criminals for work
+             *
+             *  Then create a swat officer concrete class
+             *  derived from your police officer class
+             *
+             *  have them conduct police raids in the afternoon
+             *
+             *  BREAK until 12:00
+             */
 
             foreach (var worker in workers)
             {

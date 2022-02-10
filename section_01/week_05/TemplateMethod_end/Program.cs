@@ -6,8 +6,8 @@ namespace _5_TemplateMethod
     {
         static void Main(string[] args)
         {
-            MarketingMailer mm = new MarketingMailer();
-            //MarketingMailer mm = new MarketingMailerOnlyPublic();
+            //MarketingMailer mm = new MarketingMailer();
+            MarketingMailer mm = new MarketingMailerOnlyPublic();
 
             //call the common template method
             mm.SendAllEmails();
