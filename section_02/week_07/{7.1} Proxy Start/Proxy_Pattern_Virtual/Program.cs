@@ -9,8 +9,15 @@ namespace Proxy_Pattern_Virtual
         {
             var proxySubject = new ProxySubject();
 
-            proxySubject.Request();
-            proxySubject.Request();
+            if (new Random().Next(0, 100) % 2 == 0)
+            {
+                proxySubject.Request();
+            }
+
+            if (new Random().Next(0, 100) % 5 == 0)
+            {
+                proxySubject.Request();
+            }
         }
     }
 }
