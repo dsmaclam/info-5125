@@ -6,12 +6,14 @@ namespace _8_CoR
     {
         static void Main(string[] args)
         {
-            Application a = new Application();
-            //Window w = new Window(a);
-            //DialogBox db = new DialogBox(w);
-            //PrintButton pb = new PrintButton(db);
 
-            //pb.HandleRequest();
+            Handler notHandledHandler = new Handler(); //this is to protect from request that are not handled by the CoR
+            Application a = new Application(notHandledHandler);
+            Window w = new Window(a);
+            DialogBox db = new DialogBox(w);
+            PrintButton pb = new PrintButton(db);
+
+            pb.ShowTooltip();
         }
     }
 }
