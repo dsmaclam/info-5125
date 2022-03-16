@@ -7,11 +7,11 @@ namespace _8_CoR
         static void Main(string[] args)
         {
             Application a = new Application();
-            //Window w = new Window(a);
-            //DialogBox db = new DialogBox(w);
-            //PrintButton pb = new PrintButton(db);
+            Window w = new Window(a);
+            DialogBox db = new DialogBox(w);
+            PrintButton pb = new PrintButton(db);
 
-            //pb.HandleRequest();
+            pb.ShowTooltip();
         }
     }
 }
