@@ -6,15 +6,16 @@ namespace _9_Visitor
     {
         static void Main(string[] args)
         {
-            Element componentA = new Circle();
-            Element componentB = new Circle();
-            Element componentC = new Text();
+            IElement componentA = new Circle();
+            IElement componentB = new Circle();
+            IElement componentC = new Text();
 
-            // Visitor saver = new PNGVisitor();
-            Visitor saver = new JPEGVisitor();
-            componentA.Accept(saver);
-            componentB.Accept(saver);
-            componentC.Accept(saver);
+            IVisitor saver = new PNGVisitor();
+            //IVisitor saver = new JPEGVisitor();
+            
+            componentA.AcceptVisitor(saver);
+            componentB.AcceptVisitor(saver);
+            componentC.AcceptVisitor(saver);
         }
     }
 }
