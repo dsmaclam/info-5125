@@ -6,12 +6,25 @@ namespace _8_CoR
     {
         static void Main(string[] args)
         {
+            
             Application a = new Application();
-            //Window w = new Window(a);
-            //DialogBox db = new DialogBox(w);
-            //PrintButton pb = new PrintButton(db);
+            Window w = new Window(a);
+            DialogBox db = new DialogBox(w);
+            PrintButton pb = new PrintButton(db);
 
-            //pb.HandleRequest();
+            pb.HandleRequest();
+
+            /*
+             *  Try create the DialogBox and PrintButton
+             *  with various helpText (empty, null, populated)
+             *  
+             *  PrintButton override the handle method to show 2 layers 
+             *  of helpText
+             *  
+             *  Take-up @ 11:45AM
+             * 
+             */
+
         }
     }
 }
