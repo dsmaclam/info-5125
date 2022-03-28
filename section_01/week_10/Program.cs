@@ -10,8 +10,8 @@ namespace _9_Visitor
             IElement componentB = new Circle();
             IElement componentC = new Text();
 
-            //IVisitor saver = new PNGVisitor();
-            IVisitor saver = new JPEGVisitor();
+            IVisitor saver = new PNGVisitor();
+            //IVisitor saver = new JPEGVisitor();
             componentA.Accept(saver);
             componentB.Accept(saver);
             componentC.Accept(saver);
