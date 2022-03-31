@@ -8,8 +8,8 @@ namespace _11_MVC
         {   
             Student student = new Student();
 
-            student.Name = "bob";
-            student.Id = "1";
+            student.setName("Bob");
+            student.setId("1");
 
             return student;
         }
@@ -17,14 +17,14 @@ namespace _11_MVC
         static void Main(string[] args)
         {
             Student model = LoadFromDb();
-            Controller controller = new Controller(model);
+            //View view = new View();
+            //Controller controller = new Controller(model, view);
 
-            controller.UpdateView();
+            //controller.UpdateView();
             
-            controller.SetName("Sally");
-            controller.SetId("2");
-            
-            controller.UpdateView2();
+            //model.setName("Sam");
+            //model.setId("123");
+            //controller.UpdateView();
         }
         
     }
